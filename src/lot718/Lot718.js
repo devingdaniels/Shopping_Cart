@@ -61,4 +61,4 @@ const Lot718 = [{
 },
 ]
 
-export { Lot718 }
+export default Lot718 

@@ -1,41 +1,25 @@
 import React from 'react'
+import {Routes, Route} from 'react-router-dom'
 import './App.css'
 
+
+// Porsche Images
 import Lot718  from './lot718/Lot718'
 import Lot911 from './lot911/Lot911'
 import LotTaycan from './lotTaycan/Taycan'
 
+// Components
+import Header from './components/Header'
+import Navigation from './components/Nav'
+import Footer from './components/Footer'
+
 const App = () => {
   return (    
-    <div className='gridContainer'>      
-      {Lot718.map(car => { 
-        return (
-              <div key={car.id}>
-            <img src={car.img} alt="" />
-            <h3>{ car.name }</h3>
-            <p>{ car.price }</p>
-              </div>
-        )          
-      })}      
-      {Lot911.map(car => { 
-        return (
-              <div key={car.id}>
-            <img src={car.img} alt="" />
-            <h3>{ car.name }</h3>
-            <p>{ car.price }</p>
-              </div>
-        )          
-      })}  
-      {LotTaycan.map(car => { 
-        return (
-              <div key={car.id}>
-            <img src={car.img} alt="" />
-            <h3>{ car.name }</h3>
-            <p>{ car.price }</p>
-              </div>
-        )          
-      })}   
-      </div>
+    <div >
+      <Header></Header>
+      <Navigation></Navigation>
+      <Footer></Footer>
+    </div>
   )
 }
 

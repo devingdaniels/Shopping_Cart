@@ -10,16 +10,32 @@ import LotTaycan from './lotTaycan/Taycan'
 
 // Components
 import Header from './components/Header'
-import Navigation from './components/Nav'
+import SiteNav from './components/SiteNav'
 import Footer from './components/Footer'
+import NotFound from './components/NotFound'
+
+// Pages
+import HomePage from './pages/Home'
+import ShopPage from './pages/Shop'
+import AboutPage from './pages/About'
+import CartPage from './pages/Cart'
 
 const App = () => {
-  return (    
-    <div >
-      <Header></Header>
-      <Navigation></Navigation>
-      <Footer></Footer>
-    </div>
+  return ( 
+    <>
+    <Header></Header>
+    <SiteNav></SiteNav>
+      
+    <Routes>      
+      <Route path='/' element={<HomePage/>}/>
+      <Route path='/shop' element={<ShopPage/>}/>
+      <Route path='/about' element={<AboutPage />}/>
+      <Route path='/cart' element={<CartPage />}/>
+      <Route path='*' element={<NotFound/>}/>  
+    </Routes>
+      
+    <Footer></Footer>
+    </>
   )
 }
 

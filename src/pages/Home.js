@@ -1,9 +1,14 @@
 import React from 'react'
 
+import Header from '../components/Header'
+
+import Porsche from '../../src/porsche_main.jpg'
+
 const Home = () => {
   return (
-    <div>
-      <h2>This is the HomePage</h2>
+    <div className='homePage'>
+      <Header></Header>
+      <img src={Porsche} alt="" className='mainPorsche'/>
     </div>
   )
 }

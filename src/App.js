@@ -22,10 +22,7 @@ import CartPage from './pages/Cart'
 
 const App = () => {
   return ( 
-    <>
-    <Header></Header>
-    <SiteNav></SiteNav>
-      
+    <>        
     <Routes>      
       <Route path='/' element={<HomePage/>}/>
       <Route path='/shop' element={<ShopPage/>}/>

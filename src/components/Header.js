@@ -1,12 +1,19 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+// Icons
+import {FiShoppingCart} from 'react-icons/fi'
 
-import SiteNav from '../components/SiteNav'
 
 function Header () {
   return (
     <header>
-        <h1>Porsche</h1>
-        <SiteNav></SiteNav>        
+      <h1>Porsche</h1>
+      <nav>        
+        <Link to="/">Home</Link>
+        <Link to="/shop">Shop</Link>
+        <Link to="/about">About</Link>
+        <Link to='/cart'><FiShoppingCart/></Link>
+      </nav>
     </header>
     )
 }

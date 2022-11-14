@@ -21,6 +21,11 @@ a {
   color: black;
 }
 
+cite,
+q {
+  display: block;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -32,14 +37,25 @@ footer {
 
 /* CLASSES */
 
-.homePage {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(77, 74, 74);
+/* Home Page Layout */
+.home-section-1-container {
 }
 
-.mainPorsche {
-  margin: auto;
-  height: 600px;
-  width: 1000px;
+.home-section-1-container-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-section-1-image {
+  height: 100%;
+  width: 50%;
+}
+
+.home-section-1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 3%;
 }

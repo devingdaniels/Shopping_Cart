@@ -17,7 +17,7 @@ const Section1HP = () => {
         <div className='home-section-1-container-item'>          
           <div className='home-section-1-text'>
             <h3>Drive Faster. Live Better.</h3>
-            <Link to='/shop'><button>Shop Now!</button></Link> 
+            <Link to='/shop'><button className='shopNow'>Shop Now!</button></Link> 
           </div>
           <img src={Porsche2} alt="" className='home-section-1-image' />
         </div>      

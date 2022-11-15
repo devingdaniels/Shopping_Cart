@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom'
 import { FiShoppingCart } from 'react-icons/fi'
 import PorscheBadge from '../pages/PorscheBadge.jpg'
 
-
 function Header () {
   return (
     <header>

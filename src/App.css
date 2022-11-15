@@ -162,6 +162,23 @@ button {
   justify-content: space-around;
 }
 
+/* SHOP PAGE LAYOUT */
+
+.shop-grid-layout {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+}
+
+.shop-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.lot718 {
+  width: 100%;
+}
+
 /* BUTTONS */
 .shopNow {
   margin: 10px;

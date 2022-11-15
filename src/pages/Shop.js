@@ -4,8 +4,7 @@ import Header from '../components/Header'
 
 const Shop = () => {
   return (
-    <div>
-      <Header></Header>
+    <div>      
       <h2>This is the main shopping page</h2>
     </div>
   )

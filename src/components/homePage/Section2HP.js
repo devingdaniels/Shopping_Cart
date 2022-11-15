@@ -11,18 +11,18 @@ const Section2HP = () => {
         <div className='carousel'>
             <Carousel>
                 <div>
+                    <img src={Classic } alt =''/>
+                    <p className="legend">911 Sport Classic <span>From $272,300</span></p>
+                </div>
+                <div>
                 <img src={ GT3RS} alt='' className='carouselImage'/>
-            <p className="legend">911 GT3 RS<p>From $186,200</p>
-            <i>New</i></p>            
+                <p className="legend">911 GT3 RS<span>From $186,200</span>
+                <i>New</i></p>            
                 </div>
                 <div>
                     <img src={ Fifty } alt='' />
-                    <p className="legend">911 Edition 50 Years Porsche Design <p>From $186,200</p></p>
-                </div>
-                <div>
-                    <img src={Classic } alt =''/>
-                    <p className="legend">911 Sport Classic <p>From $272,300</p></p>
-                </div>
+                    <p className="legend">911 Edition 50 Years Porsche Design <span>From $186,200</span></p>
+                </div>                
             </Carousel>
         </div>
         );

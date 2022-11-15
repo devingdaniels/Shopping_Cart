@@ -8,7 +8,7 @@ const Section3HP = () => {
   return (    
     <div className='home-section-3-container'>
       <h2>Classic</h2>
-      <img src={Classic} alt="" className='sectionTwoImage'/>
+      <img src={Classic} alt="" className='sectionThreeImage'/>
     </div>  
   )
 }

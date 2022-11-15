@@ -16,15 +16,19 @@ function Footer() {
         <div className='footer-links'>
           <Link to='/about'>About</Link>
           <Link to='/about'>Donors</Link>
-          <Link to='/'>FAQ</Link>
+          <Link to='/about'>Services</Link>
+          <Link to='/about'>FAQ</Link>
         </div>
       </div>
       <div>
         <h3>Shop</h3>
         <div className='footer-links'>
-          <Link to='/shop'>718</Link>
-          <Link to='/shop'>911</Link>
-          <Link to='/shop'>Taycan</Link>
+          <Link to='/shop/718'>718</Link>
+          <Link to='/shop/911'>911</Link>
+          <Link to='/shop/taycan'>Taycan</Link>
+          <Link to='/shop/panamera'>Panamera</Link>
+          <Link to='/shop/macan'>Macan</Link>
+          <Link to='/shop/cayenne'>Cayenne</Link>
         </div>
       </div>
       <div>

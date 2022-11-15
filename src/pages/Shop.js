@@ -1,11 +1,15 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 
-import Header from '../components/Header'
+// Components 
+import ShopNav from '../components/shopPage/ShopNav'
+import Lot718 from '../components/shopPage/718'
 
 const Shop = () => {
   return (
-    <div>      
-      <h2>This is the main shopping page</h2>
+    <div>     
+      <ShopNav />
+      
     </div>
   )
 }

@@ -14,8 +14,7 @@ function Footer() {
         <div>
         <h3>Porsche</h3>
         <div className='footer-links'>
-          <Link to='/about'>About</Link>
-          <Link to='/about'>Donors</Link>
+          <Link to='/about'>About</Link>          
           <Link to='/about'>Services</Link>
           <Link to='/about'>FAQ</Link>
         </div>

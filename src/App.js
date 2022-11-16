@@ -29,6 +29,17 @@ const App = () => {
     setCart([...cart, car])
   }
 
+  const decrementItem = (car) => { 
+    console.log('decrementItem')
+    console.log(car)
+    // 
+  }
+
+  const incrementItem = (car) => { 
+    console.log('incrementItem')
+    console.log(car)
+  }
+
   useEffect(() => { 
     console.log(cart)
   }, [cart])
@@ -47,7 +58,7 @@ const App = () => {
           <Route path='cayenne' element={<LotCayenne addItem={ updateCart}/>}/> 
       </Route>
       <Route path='about' element={<AboutPage />}/>
-        <Route path='cart' element={<CartPage cars={cart} />}/>
+        <Route path='cart' element={<CartPage cars={cart} increment={ incrementItem } decrement={ decrementItem } />}/>
       </Routes>
       <Footer/>
     </>

@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 const ShopItem = ({ car, addItem }) => {
   
   const updateCart = (car) => { 
-    addItem(car)
+    addItem(car)    
   }
 
   return (

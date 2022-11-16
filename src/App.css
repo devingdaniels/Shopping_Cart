@@ -204,6 +204,27 @@ button {
   text-align: center;
 }
 
+.service-wrapper {
+  display: flex;
+
+  padding: 0 3%;
+}
+
+.service-wrapper h4 {
+  margin: 5px 0 5px 0;
+}
+
+.service-wrapper p {
+  font-size: 0.8rem;
+  line-height: 2rem;
+}
+
+.service-item {
+  text-align: center;
+  max-width: 33.3%;
+  padding: 1%;
+}
+
 /* ------------ SHOP PAGE LAYOUT ------------ */
 
 .shop-grid-layout {

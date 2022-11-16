@@ -7,16 +7,16 @@ import { Routes, Route } from 'react-router-dom'
 
 // Pages
 import HomePage from './pages/HomePage'
-import ShopPage from './pages/Shop'
-import AboutPage from './pages/About'
-import CartPage from './pages/Cart'
+import ShopPage from './pages/ShopPage'
+import AboutPage from './pages/AboutPage'
+import CartPage from './pages/CartPage'
 
 // Components
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Lot718 from './components/shopPage/718'
-import Lot911 from './components/shopPage/911'
-import LotTaycan from './components/shopPage/Taycan'
+import Lot718 from './components/shopPage/lot718/718'
+import Lot911 from './components/shopPage/lot911/911'
+import LotTaycan from './components/shopPage/lotTaycan/Taycan'
 import LotPanamera from './components/shopPage/Panamera'
 import LotMacan from './components/shopPage/Macan'
 import LotCayenne from './components/shopPage/Cayenne'

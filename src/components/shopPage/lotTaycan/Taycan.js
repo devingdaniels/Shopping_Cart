@@ -1,3 +1,7 @@
+import React from 'react'
+import { useLayoutEffect } from 'react'
+// Components
+import ShopItem from '../ShopItem'
 // Unique ID generator
 import uniqueID from 'uniqid'
 // Images
@@ -9,9 +13,7 @@ import TaycanTurbo from './images/TaycanTurbo.png'
 import TaycanTurboS from './images/TaycanTurboS.png'
 import TaycanTurboSCross from './images/TaycanTurboSCross.png'
 
-
-
-const LotTaycan = [
+const Models = [
 {
     name: 'Taycan',
     img: Taycan,    
@@ -56,4 +58,17 @@ const LotTaycan = [
 },
 ]
 
-export default LotTaycan 
+const LotTaycan = () => {
+     useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
+   return (
+     <div className='shop-items-grid-container'>
+        {Models.map(car => {
+            return <ShopItem car={ car } key={car.id}/>
+        })}
+    </div> 
+  )
+}
+
+export default LotTaycan

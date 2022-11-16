@@ -1,5 +1,9 @@
+import React from 'react'
+import { useLayoutEffect } from 'react'
 // Unique ID generator
 import uniqueID from 'uniqid'
+// Components
+import ShopItem from '../ShopItem'
 // Images
 import Carrera from './images/Carrera.png'
 import CarreraCab from './images/CarreraCab.png'
@@ -22,10 +26,7 @@ import GT3RS from './images/GT3RS.png'
 import Classic from './images/Classic.png'
 
 
-
-
-
-const Lot911 = [
+const Models = [
 {
     name: '911 Carrera',
     img: Carrera,    
@@ -141,5 +142,20 @@ const Lot911 = [
     id: uniqueID(),
 },
 ]
+
+
+
+const Lot911 = () => {
+     useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
+  return (
+     <div className='shop-items-grid-container'>
+        {Models.map(car => {
+            return <ShopItem car={ car } key={car.id}/>
+        })}
+    </div> 
+  )
+}
 
 export default Lot911

@@ -1,3 +1,5 @@
+import React from 'react'
+import { useLayoutEffect } from 'react'
 // Unique ID generator
 import uniqueID from 'uniqid'
 // Images
@@ -10,8 +12,10 @@ import Boxster718GTS from './images/Boxster718GTS.png'
 import Spyder718 from './images/Spyder718.png'
 import Cayman718GT4 from './images/Cayman718GT4.png'
 
+import ShopItem from '../ShopItem'
 
-const Lot718 = [{
+
+const Models = [{
     name: '718 Cayman',
     img: Cayman718,    
     price: '$63,400',
@@ -61,4 +65,20 @@ const Lot718 = [{
 },
 ]
 
-export default Lot718 
+
+
+const Lot718 = () => {
+
+    useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
+    return (                    
+    <div className='shop-items-grid-container'>
+        {Models.map(car => {
+            return <ShopItem car={ car } key={car.id}/>
+        })}
+    </div>    
+  )
+}
+
+export default Lot718

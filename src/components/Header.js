@@ -2,13 +2,13 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 // Icons
 import { FiShoppingCart } from 'react-icons/fi'
-import PorscheBadge from '../pages/PorscheBadge.jpg'
+import BadgeIcon from './images/badgeIcon.jpg'
 
 function Header () {
   return (
     <header>
       <div className='badgeContainer'>      
-        <img src={PorscheBadge} alt="" className='porscheBadge' />
+        <img src={BadgeIcon} alt="" className='porscheBadge' />
         <Link to='/'><h1>Porsche</h1></Link>
       </div>
       <nav >        

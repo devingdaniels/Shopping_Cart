@@ -1,9 +1,18 @@
 import React from 'react'
 
+
+// Components 
+import History from '../components/aboutPage/History'
+import Services from '../components/aboutPage/Services'
+import FAQ from '../components/aboutPage/FAQ'
+
+
 const About = () => {
   return (
-    <div>
-      <h2>This is the about page</h2>
+    <div className='about-page-container'>
+      <History />
+      <Services />
+      <FAQ/>
     </div>
   )
 }

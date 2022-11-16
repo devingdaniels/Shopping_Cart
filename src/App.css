@@ -88,6 +88,12 @@ p {
 .porscheBadge {
   height: 50px;
   padding-right: 10px;
+  cursor: pointer;
+}
+
+.badgeContainer:hover {
+  transform: translateY(-3px);
+  color: rgb(247, 68, 34);
 }
 
 /* HOMEPAGE LAYOUT */
@@ -215,7 +221,7 @@ button {
   flex-direction: column;
   align-items: center;
   margin: 2%;
-  box-shadow: 1px 1px 4px 3px rgb(247, 68, 34);
+  box-shadow: 1px 1px 6px 2px rgb(189, 183, 182);
 }
 
 /* BUTTONS */

@@ -58,14 +58,14 @@ const Models = [
 },
 ]
 
-const LotTaycan = () => {
+const LotTaycan = ({ addItem }) => {
      useLayoutEffect(() => {
     window.scrollTo(0, 0)
 });
    return (
      <div className='shop-items-grid-container'>
         {Models.map(car => {
-            return <ShopItem car={ car } key={car.id}/>
+            return <ShopItem car={ car } key={car.id} addItem={ addItem }/>
         })}
     </div> 
   )

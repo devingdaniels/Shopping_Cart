@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Cart = () => {
+const Cart = ({ cars}) => {
   return (
-    <div>This is the cart page</div>
+    <div>{cars.map(car => { 
+      return <p key={car.id}>{car.name}, {car.price }</p>
+    })}</div>
   )
 }
 

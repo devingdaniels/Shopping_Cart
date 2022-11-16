@@ -6,7 +6,7 @@ const ShopItem = ({ car }) => {
       <img src={car.img} alt="" /> 
       <p>{car.name}</p>
       <p>{car.price}</p>
-      <button>Add to Cart</button>
+      <button className='add-to-cart'>Add to Cart</button>
     </div>
       
   )

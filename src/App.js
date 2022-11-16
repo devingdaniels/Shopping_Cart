@@ -17,9 +17,9 @@ import Footer from './components/Footer'
 import Lot718 from './components/shopPage/lot718/718'
 import Lot911 from './components/shopPage/lot911/911'
 import LotTaycan from './components/shopPage/lotTaycan/Taycan'
-import LotPanamera from './components/shopPage/Panamera'
-import LotMacan from './components/shopPage/Macan'
-import LotCayenne from './components/shopPage/Cayenne'
+import LotPanamera from './components/shopPage/lotPanamera/Panamera'
+import LotMacan from './components/shopPage/lotMacan/Macan'
+import LotCayenne from './components/shopPage/lotCayenne/Cayenne'
 
 const App = () => {
   return ( 

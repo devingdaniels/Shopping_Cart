@@ -38,6 +38,12 @@ nav a:hover {
   color: rgb(247, 68, 34);
 }
 
+.cartIcon:focus,
+nav a:focus {
+  color: rgb(247, 68, 34);
+  text-decoration: underline;
+}
+
 span {
   display: block;
 }
@@ -66,6 +72,10 @@ a {
 cite,
 q {
   display: block;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 /* Header Layout */
@@ -162,7 +172,8 @@ button {
   justify-content: space-around;
 }
 
-/* SHOP PAGE LAYOUT */
+/* ------------ SHOP PAGE LAYOUT ------------ */
+
 .shop-grid-layout {
   /* background-color: rgb(93, 93, 250); */
   display: flex;
@@ -173,6 +184,11 @@ button {
 .shop-navigation {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.shop-navigation a {
+  padding: 5%;
 }
 
 .shop-navigation a:hover {
@@ -183,6 +199,8 @@ button {
 .shop-navigation a:focus {
   /* transform: translateY(-3px); */
   color: rgb(247, 68, 34);
+  text-decoration: underline;
+  text-decoration-style: double;
 }
 
 .shop-items-grid-container {
@@ -193,7 +211,9 @@ button {
 
 .shop-item {
   justify-self: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 2%;
   box-shadow: 1px 1px 4px 3px rgb(247, 68, 34);
 }
@@ -268,5 +288,41 @@ button {
 }
 
 .subscribe:active {
+  transform: scale(0.95);
+}
+
+.add-to-cart {
+  margin: 10px;
+  padding: 5px 8px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.add-to-cart:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.add-to-cart:active {
   transform: scale(0.95);
 }

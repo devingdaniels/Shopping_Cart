@@ -2,8 +2,10 @@ import React, {useEffect, useLayoutEffect, useState } from 'react'
 // Components 
 import CartItem from './CartItem'
 
+import { Link } from 'react-router-dom'
 
-const Cart = ({ cart, total, subTotal, increment, decrement }) => {
+
+const Cart = ({ cart, total, subTotal, increment, decrement, resetCart }) => {
 
   const [subTotalWithCommas, setWithCommas] = useState(0)
   
@@ -26,7 +28,7 @@ useLayoutEffect(() => {
         <div className='cart-checkout-section'>
           <p>Your order qualifies for FREE Shipping. Choose this option at checkout. See details</p>
           <h3>SubTotal ({total} items): ${subTotalWithCommas}</h3>
-          <button className='checkout-button'>Proceed to Checkout</button>
+          <Link to='/confirmation'><button onClick={resetCart} className='checkout-button'>Proceed to Checkout</button></Link>          
         </div >
         <div className='cart-items-section'>
           {cart.map((car, index) => { 

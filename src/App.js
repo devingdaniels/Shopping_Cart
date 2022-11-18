@@ -21,6 +21,7 @@ import LotTaycan from './components/shopPage/lotTaycan/Taycan'
 import LotPanamera from './components/shopPage/lotPanamera/Panamera'
 import LotMacan from './components/shopPage/lotMacan/Macan'
 import LotCayenne from './components/shopPage/lotCayenne/Cayenne'
+import ShipNow from './ShipNow'
 
 
 const App = () => {
@@ -93,6 +94,13 @@ const App = () => {
     return 0 
   }
 
+
+  const resetCart = () => { 
+    setCart([])
+    setTotalItems(0)
+    setSubTotal(0)
+  }
+
   useEffect(() => { 
     const total = getTotalCartItems()
     setTotalItems(total)
@@ -102,7 +110,7 @@ const App = () => {
 
   return ( 
     <>
-    <Header/>
+      <Header total={ totalItems } />
     <Routes>
       <Route path='/' element={<HomePage/>}/>
         <Route path='shop' element={<ShopPage />}>          
@@ -112,10 +120,12 @@ const App = () => {
           <Route path='panamera' element={<LotPanamera addItem={ updateCart} />} />
           <Route path='macan' element={<LotMacan addItem={ updateCart} />} />
           <Route path='cayenne' element={<LotCayenne addItem={ updateCart}/>}/> 
-      </Route>
+        </Route>
+        <Route path='confirmation' element={ <ShipNow/> }></Route>
       <Route path='about' element={<AboutPage />}/>
-        <Route path='cart' element={<CartPage cart={cart} total={totalItems} subTotal={ subTotal} increment={ increment } decrement={ decrement } />}/>
+        <Route path='cart' element={<CartPage cart={cart} total={totalItems} subTotal={subTotal} increment={increment} decrement={decrement} resetCart={ resetCart } />}/>
       </Routes>
+      
       <Footer/>
     </>
   )

@@ -92,6 +92,12 @@ p {
   color: rgb(247, 68, 34);
 }
 
+.header-item-count {
+  font-size: 0.6em;
+  color: green;
+  width: 20px;
+}
+
 /* HOMEPAGE LAYOUT */
 .home-section-1-container {
   background-color: rgb(242, 242, 245);
@@ -337,6 +343,13 @@ footer input {
   transform: translateY(-3px);
   cursor: pointer;
   color: rgb(247, 68, 34);
+}
+
+/* CONFIRMATION PAGE */
+
+.order-confirmed {
+  font-size: 3em;
+  margin: 2% 0;
 }
 
 /* BUTTONS */

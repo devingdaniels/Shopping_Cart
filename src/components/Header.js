@@ -9,9 +9,9 @@ function Header({ total }) {
     <header>
       <div className='badgeContainer'>      
         <img src={BadgeIcon} alt="" className='porscheBadge' />
-        <Link to='/home'><h1>Porsche</h1></Link>
+        <Link to='/'><h1>Porsche</h1></Link>
       </div>
-      <nav >        
+      <nav>
         <Link to="/about">About</Link>
         <Link to="/shop/718">Shop</Link>
         <div>

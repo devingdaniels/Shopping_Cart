@@ -188,6 +188,7 @@ footer input {
   padding: 3%;
   display: flex;
   justify-content: space-evenly;
+  margin: 1% 0;
 }
 
 .history-wrapper p {
@@ -292,8 +293,7 @@ footer input {
   box-shadow: 1px 1px 6px 2px rgb(189, 183, 182);
   padding: 2%;
   grid-column: 3/4;
-  max-height: 40vh;
-  min-height: max-content;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -316,20 +316,27 @@ footer input {
 }
 
 .cart-item-img {
-  box-shadow: 0px 0px 7px 2px #f09819;
   height: 100%;
-  width: 35%;
+  width: 200px;
 }
 
 .cart-item-info {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 40%;
+}
+
+.increment-button-container {
+  display: flex;
+  align-items: center;
 }
 
 .increment-item-button:hover,
 .decrement-item-button:hover {
   transform: translateY(-3px);
+  cursor: pointer;
+  color: rgb(247, 68, 34);
 }
 
 /* BUTTONS */

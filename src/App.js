@@ -26,6 +26,7 @@ import LotCayenne from './components/shopPage/lotCayenne/Cayenne'
 const App = () => {
   // HOOKS  
   const [cart, setCart] = useState([])
+  const [totalItems, setTotalItems] = useState(0)
 
 // METHODS 
   const updateCart = (car) => {        
@@ -39,29 +40,23 @@ const App = () => {
       // Add quantity prop to car, add car to cart
       car.quantity = 1
       setCart(cart => [...cart, car])
-    }
+    }    
   }
 
   const increment = (car) => { 
-    
-    
+     // Car exists in the cart, find it
+    const existingCar = cart.find(el => el.id === car.id)
+    existingCar.quantity = existingCar.quantity + 1
 
-
-
-    /*
-      1. Get the name of the car 
-      2. Find car type in the cart
-      3. Increment its count property 
-
-    */  
-  }
+    setCart(cart => [...cart])       
+  } 
 
   const decrement = (car) => { 
     // Car exists in the cart, find it
     const existingCar = cart.find(el => el.id === car.id)
   // Ensure count > 1 before decrementing
     if (existingCar.quantity > 1) {
-      existingCar.quantity = existingCar.quantity - 1
+      existingCar.quantity = existingCar.quantity - 1      
       setCart(cart => [...cart])
     }
     // Remove car from cart
@@ -70,10 +65,25 @@ const App = () => {
       delete car.quantity
       // Update the new car by remove the car
       const newCart = cart.filter(obj => obj.id !== car.id)   
-      // Update state
+      // Update state      
       setCart(newCart)
     }    
   }
+
+  const getTotalCartItems = () => {
+    if (cart.length !== 0) { 
+      const total = cart.reduce((a, b) => ({ quantity: a.quantity + b.quantity }))
+      return total.quantity
+    }
+    return 0
+  }
+
+
+  useEffect(() => { 
+    const total = getTotalCartItems()
+
+    setTotalItems(total)
+  }, [cart])
 
   return ( 
     <>
@@ -89,7 +99,7 @@ const App = () => {
           <Route path='cayenne' element={<LotCayenne addItem={ updateCart}/>}/> 
       </Route>
       <Route path='about' element={<AboutPage />}/>
-        <Route path='cart' element={<CartPage cart={cart} increment={ increment } decrement={ decrement } />}/>
+        <Route path='cart' element={<CartPage cart={cart} total={ totalItems } increment={ increment } decrement={ decrement } />}/>
       </Routes>
       <Footer/>
     </>
@@ -97,3 +107,5 @@ const App = () => {
 }
 
 export default App
+
+

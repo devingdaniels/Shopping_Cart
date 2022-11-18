@@ -1,21 +1,11 @@
-import React, {useEffect, useLayoutEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 // Components 
 import CartItem from './CartItem'
 
-import { Link } from 'react-router-dom'
-
-
 const Cart = ({ cart, total, subTotal, increment, decrement, resetCart }) => {
-
   const [subTotalWithCommas, setWithCommas] = useState(0)
   
-useLayoutEffect(() => {
-  window.scrollTo({
-    top: 0,  
-    behavior: 'smooth'
-  })
- });
-
   useEffect(() => { 
     const withCommas = subTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     setWithCommas(withCommas)

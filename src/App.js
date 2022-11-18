@@ -112,7 +112,7 @@ const App = () => {
     <>
       <Header total={ totalItems } />
     <Routes>
-      <Route path='/' element={<HomePage/>}/>
+      <Route path='/home' element={<HomePage/>}/>
         <Route path='shop' element={<ShopPage />}>          
           <Route path='718' element={<Lot718 addItem={ updateCart} />}/>
           <Route path='911' element={<Lot911 addItem={ updateCart} />}/>

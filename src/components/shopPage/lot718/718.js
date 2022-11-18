@@ -17,51 +17,51 @@ import ShopItem from '../ShopItem'
 
 const Models = [{
     name: '718 Cayman',
-    img: Cayman718,    
-    price: '$63,400',
-    id: uniqueID(),
+    img: Cayman718,
+    id: uniqueID(),   
+    price: 63400    
 },
 {
     name: '718 Boxster',
-    img: Boxster718,
+    img: Boxster718,    
     id: uniqueID(),
-    price: '$65,500'
+    price: 65500,
 },
 {
     name: '718 Cayman S',
     img: CaymanS718,
     id: uniqueID(),
-    price: '$75,400'
+    price: 75400
 },
 {
     name: '718 Boxster S',
     img: BoxsterS718,
     id: uniqueID(),
-    price: '$77,500'
+    price: 77500
 },
 {
     name: '718 Cayman GTS 4.0',
     img: Cayman718GTS,
     id: uniqueID(),
-    price: '$90,300'
+    price: 90300
 },
 {
     name: '718 Boxster GTS 4.0',
     img: Boxster718GTS,
     id: uniqueID(),
-    price: '$92,400'
+    price: 92400
 },
 {
     name: '718 Spyder',
     img: Spyder718,
     id: uniqueID(),
-    price: '$103,400'
+    price: 103400
 },
 {
     name: '718 Cayman GTR RS',
     img: Cayman718GT4,
     id: uniqueID(),
-    price: '$149,100'
+    price: 149100
 },
 ]
 

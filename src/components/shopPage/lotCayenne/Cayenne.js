@@ -15,31 +15,31 @@ const Models = [
 {
     name: 'Cayenne',
     img: Cayenne1,    
-    price: '$72,200',
+    price: 72200,
     id: uniqueID(),
   },
   {
     name: 'Cayenne GTS',
     img: Cayenne2,    
-    price: '$113,100',
+    price: 113100,
     id: uniqueID(),
   },
   {
     name: 'Cayenne Turbo',
     img: Cayenne3,    
-    price: '$135,500',
+    price: 135500,
     id: uniqueID(),
   },
   {
     name: 'Cayenne Turbo S E-Hybrid',
     img: Cayenne4,    
-    price: '$171,300',
+    price: 171300,
     id: uniqueID(),
   },
   {
     name: 'Cayenne Turbo GT',
     img: Cayenne5,    
-    price: '$188,700',
+    price: 188700,
     id: uniqueID(),
   },
 ]

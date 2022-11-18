@@ -15,25 +15,25 @@ const Models = [
 {
     name: 'Macan',
     img: Macan,    
-    price: '$57,500',
+    price: 57500,
     id: uniqueID(),
   },
 {
     name: 'Macan T',
     img: MacanT,    
-    price: '$63,100',
+    price: 63100,
     id: uniqueID(),
   },
 {
     name: 'Macan S',
     img: MacanS,    
-    price: '$68,400',
+    price: 68400,
     id: uniqueID(),
   },
 {
     name: 'Macan GTS',
     img: MacanGTS,    
-    price: '$82,900',
+    price: 82900,
     id: uniqueID(),
 },
 ]

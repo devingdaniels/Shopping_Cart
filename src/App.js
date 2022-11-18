@@ -27,6 +27,7 @@ const App = () => {
   // HOOKS  
   const [cart, setCart] = useState([])
   const [totalItems, setTotalItems] = useState(0)
+  const [subTotal, setSubTotal] = useState(0)
 
 // METHODS 
   const updateCart = (car) => {        
@@ -47,7 +48,6 @@ const App = () => {
      // Car exists in the cart, find it
     const existingCar = cart.find(el => el.id === car.id)
     existingCar.quantity = existingCar.quantity + 1
-
     setCart(cart => [...cart])       
   } 
 
@@ -75,14 +75,29 @@ const App = () => {
       const total = cart.reduce((a, b) => ({ quantity: a.quantity + b.quantity }))
       return total.quantity
     }
-    return 0
+    return 0 
   }
 
+  const getCartSubTotal = () => { 
+    if (cart.length !== 0) { 
+      const total = cart.reduce(function(accumulator, currentValue) {
+        if (currentValue.quantity === 1) {
+          return accumulator + currentValue.price
+        }
+        else { 
+          return accumulator + ( currentValue.price * currentValue.quantity)
+        }
+      },0)      
+      return total
+    }
+    return 0 
+  }
 
   useEffect(() => { 
     const total = getTotalCartItems()
-
     setTotalItems(total)
+    const subTotal = getCartSubTotal()
+    setSubTotal(subTotal)    
   }, [cart])
 
   return ( 
@@ -99,7 +114,7 @@ const App = () => {
           <Route path='cayenne' element={<LotCayenne addItem={ updateCart}/>}/> 
       </Route>
       <Route path='about' element={<AboutPage />}/>
-        <Route path='cart' element={<CartPage cart={cart} total={ totalItems } increment={ increment } decrement={ decrement } />}/>
+        <Route path='cart' element={<CartPage cart={cart} total={totalItems} subTotal={ subTotal} increment={ increment } decrement={ decrement } />}/>
       </Routes>
       <Footer/>
     </>

@@ -28,33 +28,26 @@ const App = () => {
   const [cart, setCart] = useState([])
 
 // METHODS 
-  const updateCart = (car) => {
-    // // Get the ID of the car
-    // const id = car.id
-    // // Check if car is unique to cart
-    // const hasCount = car.hasOwnProperty('count')
-    
-    // if (cart.some(obj => obj.car.car.id === id)) {
-    //   console.log('duplicate car')
-    //   // Get the index of the car with that id
-    //   const car = cart.find(car => car.id = id)
-    //   car.count = car.count + 1
-    //   setCart(cart => [...cart])
-    // }
-    // else {
-    // }
-    
-    setCart(cart => [...cart, car])
-
-    /* 
-    1. Check if the car type has already been added to the cart (car.name)
-        if (true) --> increase the count on that car type object (don't add duplicate car types)
-        else --> add the car object to the cart, and add a count property on object to track count of same-type-cars
-    2. 
-    */    
+  const updateCart = (car) => {        
+    // Check if car is unique to cart     
+    if (car.hasOwnProperty('quantity')) {
+      // Increase the quantity prop on car object, update cart
+      car.quantity = car.quantity + 1
+      setCart(cart => [...cart])
+    }
+    else {
+      // Add quantity prop to car, add car to cart
+      car.quantity = 1
+      setCart(cart => [...cart, car])
+    }
   }
 
   const increment = (car) => { 
+    
+    
+
+
+
     /*
       1. Get the name of the car 
       2. Find car type in the cart
@@ -64,14 +57,22 @@ const App = () => {
   }
 
   const decrement = (car) => { 
-    /*
-      1. Get the name of the car 
-      2. Find car type in the cart
-      3. Decrement its count property 
-        if (count <= 0) --> remove the car type from the cart 
-
-    */
-    console.log(car)
+    // Car exists in the cart, find it
+    const existingCar = cart.find(el => el.id === car.id)
+  // Ensure count > 1 before decrementing
+    if (existingCar.quantity > 1) {
+      existingCar.quantity = existingCar.quantity - 1
+      setCart(cart => [...cart])
+    }
+    // Remove car from cart
+    else { 
+      // Remove quantity prop from car
+      delete car.quantity
+      // Update the new car by remove the car
+      const newCart = cart.filter(obj => obj.id !== car.id)   
+      // Update state
+      setCart(newCart)
+    }    
   }
 
   return ( 

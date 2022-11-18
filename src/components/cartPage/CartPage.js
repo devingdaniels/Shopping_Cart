@@ -3,13 +3,14 @@ import React, { useLayoutEffect, useState } from 'react'
 import CartItem from './CartItem'
 
 
-const Cart = ( { cart } ) => {
+const Cart = ( { cart, increment, decrement } ) => {
 // HOOKS
   const [subTotal, setSubTotal] = useState(0)
 
   const getTotal = () => {  
     
   }
+
 useLayoutEffect(() => {
   window.scrollTo({
     top: 0,  
@@ -27,8 +28,8 @@ useLayoutEffect(() => {
           <button className='checkout-button'>Proceed to Checkout</button>
         </div >
         <div className='cart-items-section'>
-          {cart.map((item, index) => { 
-            return <CartItem car={item} key={index} />
+          {cart.map((car, index) => { 
+            return <CartItem car={car} increment={ increment } decrement={ decrement } key={index} />
           })}
         </div>
       </div>

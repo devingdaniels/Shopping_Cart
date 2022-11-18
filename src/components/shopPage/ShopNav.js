@@ -4,6 +4,8 @@ import { Link, Outlet } from 'react-router-dom'
 
 const ShopNav = () => {
   return (
+    <>
+    <h2>Shop Models</h2>
     <div className='shop-grid-layout'>
       <div className='shop-navigation'>
       <h2>Models</h2>
@@ -15,7 +17,8 @@ const ShopNav = () => {
       <Link to='cayenne'>Cayenne</Link>
       </div>
       <Outlet/>
-    </div>
+      </div>
+    </>
   )
 }
 

@@ -147,7 +147,10 @@ const Models = [
 
 const Lot911 = ({ addItem }) => {
      useLayoutEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo({
+    top: 0,  
+    behavior: 'smooth'
+  })
 });
   return (
      <div className='shop-items-grid-container'>

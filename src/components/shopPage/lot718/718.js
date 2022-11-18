@@ -70,9 +70,12 @@ const Models = [{
 const Lot718 = ({ addItem }) => {
 
     useLayoutEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo({
+    top: 0,  
+    behavior: 'smooth'
+  })
 });
-    return (                    
+    return (        
     <div className='shop-items-grid-container'>
         {Models.map(car => {
             return <ShopItem car={car} key={car.id} addItem={ addItem } />

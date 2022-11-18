@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Shopping_Cart/home/static/css/main.d49e3510.css",
-    "main.js": "/Shopping_Cart/home/static/js/main.369eb5c5.js",
-    "static/media/porsche_in_shop.jpg": "/Shopping_Cart/home/static/media/porsche_in_shop.2d42b1a53e95f9488351.jpg",
-    "static/media/porsche1.jpg": "/Shopping_Cart/home/static/media/porsche1.6cd60852995658818f8c.jpg",
-    "static/media/classic.png": "/Shopping_Cart/home/static/media/classic.f829a673a1f1bd09ab59.png",
-    "static/media/GT3RS.png": "/Shopping_Cart/home/static/media/GT3RS.a46295f0da74b7c72409.png",
-    "static/media/porsche2.jpg": "/Shopping_Cart/home/static/media/porsche2.702e58d6f97119ff425c.jpg",
-    "static/media/fifty.png": "/Shopping_Cart/home/static/media/fifty.bf99d6fb660b918183fc.png",
-    "static/media/sportClassic.png": "/Shopping_Cart/home/static/media/sportClassic.b0813daaa6861d7927db.png",
-    "static/media/badgeIcon.jpg": "/Shopping_Cart/home/static/media/badgeIcon.30e88b0db02f77a2b7c0.jpg",
-    "index.html": "/Shopping_Cart/home/index.html",
-    "main.d49e3510.css.map": "/Shopping_Cart/home/static/css/main.d49e3510.css.map",
-    "main.369eb5c5.js.map": "/Shopping_Cart/home/static/js/main.369eb5c5.js.map"
+    "main.css": "/Shopping_Cart/static/css/main.d49e3510.css",
+    "main.js": "/Shopping_Cart/static/js/main.275c166f.js",
+    "static/media/porsche_in_shop.jpg": "/Shopping_Cart/static/media/porsche_in_shop.2d42b1a53e95f9488351.jpg",
+    "static/media/porsche1.jpg": "/Shopping_Cart/static/media/porsche1.6cd60852995658818f8c.jpg",
+    "static/media/classic.png": "/Shopping_Cart/static/media/classic.f829a673a1f1bd09ab59.png",
+    "static/media/GT3RS.png": "/Shopping_Cart/static/media/GT3RS.a46295f0da74b7c72409.png",
+    "static/media/porsche2.jpg": "/Shopping_Cart/static/media/porsche2.702e58d6f97119ff425c.jpg",
+    "static/media/fifty.png": "/Shopping_Cart/static/media/fifty.bf99d6fb660b918183fc.png",
+    "static/media/sportClassic.png": "/Shopping_Cart/static/media/sportClassic.b0813daaa6861d7927db.png",
+    "static/media/badgeIcon.jpg": "/Shopping_Cart/static/media/badgeIcon.30e88b0db02f77a2b7c0.jpg",
+    "index.html": "/Shopping_Cart/index.html",
+    "main.d49e3510.css.map": "/Shopping_Cart/static/css/main.d49e3510.css.map",
+    "main.275c166f.js.map": "/Shopping_Cart/static/js/main.275c166f.js.map"
   },
   "entrypoints": [
     "static/css/main.d49e3510.css",
-    "static/js/main.369eb5c5.js"
+    "static/js/main.275c166f.js"
   ]
 }

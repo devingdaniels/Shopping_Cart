@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Shopping_Cart/static/css/main.d49e3510.css",
-    "main.js": "/Shopping_Cart/static/js/main.0ee8e4e3.js",
+    "main.js": "/Shopping_Cart/static/js/main.800a5702.js",
     "static/media/porsche_in_shop.jpg": "/Shopping_Cart/static/media/porsche_in_shop.2d42b1a53e95f9488351.jpg",
     "static/media/porsche1.jpg": "/Shopping_Cart/static/media/porsche1.6cd60852995658818f8c.jpg",
     "static/media/classic.png": "/Shopping_Cart/static/media/classic.f829a673a1f1bd09ab59.png",
@@ -12,10 +12,10 @@
     "static/media/badgeIcon.jpg": "/Shopping_Cart/static/media/badgeIcon.30e88b0db02f77a2b7c0.jpg",
     "index.html": "/Shopping_Cart/index.html",
     "main.d49e3510.css.map": "/Shopping_Cart/static/css/main.d49e3510.css.map",
-    "main.0ee8e4e3.js.map": "/Shopping_Cart/static/js/main.0ee8e4e3.js.map"
+    "main.800a5702.js.map": "/Shopping_Cart/static/js/main.800a5702.js.map"
   },
   "entrypoints": [
     "static/css/main.d49e3510.css",
-    "static/js/main.0ee8e4e3.js"
+    "static/js/main.800a5702.js"
   ]
 }

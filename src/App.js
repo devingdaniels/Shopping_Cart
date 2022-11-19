@@ -1,17 +1,14 @@
 // CSS 
 import './App.css'
-
 // React libraries 
 import React, { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
-
 // Pages
 import HomePage from './pages/HomePage'
 import ShopPage from './pages/ShopPage'
 import AboutPage from './pages/AboutPage'
 import CartPage from './components/cartPage/CartPage'
-
 // Components
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -124,8 +121,7 @@ const App = () => {
         <Route path='confirmation' element={ <ShipNow/> }></Route>
       <Route path='about' element={<AboutPage />}/>
         <Route path='cart' element={<CartPage cart={cart} total={totalItems} subTotal={subTotal} increment={increment} decrement={decrement} resetCart={ resetCart } />}/>
-      </Routes>
-      
+      </Routes>      
       <Footer/>
     </>
   )
